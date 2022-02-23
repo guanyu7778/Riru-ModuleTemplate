@@ -73,11 +73,12 @@ static void my_forkAndSpecializePost(JNIEnv *env) {
         white_list = "";
     }
 
-    if (!strstr(white_list, package_name)) {
+    if (!strstr(white_list, nice_process_name)) {
+		LOGI("Q_M white list doesnot contains %s", nice_process_name);
         return;
     }
 
-    LOGI("Q_M xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx nice_process_name=%s, pkg=%s,uid=%d, isApp= %d",
+    LOGI("Q_M nice_process_name=%s, pkg=%s,uid=%d, isApp= %d",
          nice_process_name, package_name, my_uid,
          isApp(my_uid));
 

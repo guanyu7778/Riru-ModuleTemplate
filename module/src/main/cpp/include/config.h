@@ -18,5 +18,5 @@ namespace riru {
     extern const int moduleApiVersion;
     extern const int moduleMinApiVersion;
     constexpr const char* kZygoteNiceName = "zygote64";
-    constexpr const char* nextLoadSo = "/data/local/yqfin.so";
+    constexpr const char* nextLoadSo = "/system/lib64/libyqfin.so";
 }
