@@ -1,0 +1,3 @@
+adb shell
+kenzo:/ $ su
+kenzo:/ # setprop sys.usb.config diag,adb
